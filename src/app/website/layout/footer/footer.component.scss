@@ -1,0 +1,41 @@
+$primary-color: #673ab7;
+$secondary-color: #9c27b0;
+$accent-color: #ff5722;
+$neutral-color: #e0e0e0;
+.footer {
+    background-color: $secondary-color;
+    color: #ffffff;
+    padding: 20px 0;
+  
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      p {
+        margin: 0;
+      }
+  
+      .footer-nav {
+        ul {
+          list-style: none;
+          padding: 0;
+  
+          li {
+            display: inline-block;
+            margin-right: 20px;
+  
+            a {
+              color: #ffffff;
+              text-decoration: none;
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

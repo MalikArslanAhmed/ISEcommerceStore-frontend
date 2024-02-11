@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { WebsiteRoutingModule } from './website-routing.module';
 import { RouterOutlet } from '@angular/router';
 import { WebsiteComponent } from './website.component';
+import { LayoutModule } from './layout/layout.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { WebsiteComponent } from './website.component';
   imports: [
     CommonModule,
     RouterOutlet,
-    WebsiteRoutingModule
+    WebsiteRoutingModule,
+    LayoutModule
   ]
 })
 export class WebsiteModule { }

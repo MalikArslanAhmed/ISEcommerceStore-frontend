@@ -1,0 +1,47 @@
+// Variables
+$primary-color: #673ab7;
+$secondary-color: #9c27b0;
+$accent-color: #ff5722;
+$neutral-color: #e0e0e0;
+
+// Header styles
+.header {
+  background-color: $primary-color;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .nav {
+    display: none;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: block;
+        margin-bottom: 10px;
+
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .nav {
+      display: block;
+    }
+  }
+}
